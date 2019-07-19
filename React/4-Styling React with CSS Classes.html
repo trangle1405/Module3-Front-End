@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            height: 100px;
+            background-color: #333;
+            color: whitesmoke;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: blue;
+            color: whitesmoke;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 500px;
+            background-color: green;
+            color: whitesmoke;
+            margin-bottom: 15px;
+            /* text-align: center; */
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/babel">
+			function Footer() {
+			    return (
+			        <footer className="footer">Footer cuối trang</footer>
+			    )
+			}
+
+			function Header() {
+			    return (
+			        <header className="navbar">Header đầu trang, dự định bỏ logo và Nar</header>
+			    )
+			}
+
+			function MainContent() {
+			    return (
+			        <main className="main">Nội dung chính, chứa linh tinh</main>
+			    )
+			}
+
+			function App() {
+			    return (
+			        <div>
+			            <Header />
+			            <MainContent />
+			            <Footer />
+			        </div>
+			    )
+			}
+
+			ReactDOM.render(
+			  <App />,
+			  document.getElementById("root")
+			)
+        </script>
+</body>
+
+</html>
