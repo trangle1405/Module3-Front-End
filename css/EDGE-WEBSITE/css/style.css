@@ -46,7 +46,7 @@ margin: 0.5rem 0;
 list-style: none;
 }
 .list li {
-    padding: 0.5rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
     border-bottom: #444444 dotted 1px;
 }
 
@@ -152,7 +152,7 @@ list-style: none;
 /* session what we do */
 #what .items{
     display: flex;
-    padding:  2rem;
+    padding:  1rem;
 }
 #what .items .item{
     flex:1;

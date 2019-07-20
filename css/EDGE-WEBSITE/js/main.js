@@ -11,27 +11,24 @@ function initMap() {
 }
 
 // sticky menu background
-window.addEventListener('scroll',function(){
-  if(window.scrollY>150){
-    document.querySelector('#navbar').style.opacity =0.9;
-  }else {
-    document.querySelector('#navbar').style.opacity =1;
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 150) {
+    this.document.querySelector("#navbar").style.opacity = 0.9;
+  } else {
+    document.querySelector("#navbar").style.opacity = 1;
   }
 });
 
-
 //smood scrolling
-$('#navbar a, .btn ').on('click',function(event) {
-  if (this.hash !== '' ) { 
+$("#navbar a, .btn").on("click", function(event) {
+  if (this.hash !== "") {
     event.preventDefault();
-
     const hash = this.hash;
-
-    $('html,body').animate(
+    $("html, body").animate(
       {
-        scrollTop: $(hash).offset().top -100
+        scrollTop: $(hash).offset().top - 100
       },
-      800 
+      800
     );
   }
 });
